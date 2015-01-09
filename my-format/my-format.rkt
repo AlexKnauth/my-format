@@ -18,7 +18,7 @@
 
 (define nat? exact-nonnegative-integer?)
 
-(define parse-format-args-warn-about-newline? (make-parameter #t))
+(define parse-format-args-warn-about-newline? (make-parameter #t (λ (x) (if x #t #f))))
 
 (define (-format . args)
   (apply format (parse-format-args args)))
