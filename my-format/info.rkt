@@ -1,4 +1,4 @@
 #lang info
 
-(define scribblings '(["docs/my-format.scrbl" '()]))
+(define scribblings '(["docs/my-format.scrbl" ()]))
 
